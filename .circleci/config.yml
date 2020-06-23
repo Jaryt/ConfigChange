@@ -8,7 +8,7 @@ jobs:
         steps:
             - checkout
             - run: ./validate.sh
-            - run: echo This shouldnt run!
+            - run: echo This should run!
 workflows:
     version: 2
     default:

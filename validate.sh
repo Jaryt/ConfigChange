@@ -4,3 +4,6 @@ if [ "$changes" = ".circleci/config.yml" ]; then
   echo "Only found a configuration change. Stopping build" 
   exit 1
 fi
+
+
+# test
