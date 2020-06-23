@@ -1,0 +1,16 @@
+  
+version: 2.1
+
+jobs:
+    build:
+        docker:
+            - image: cimg/base:2020.01
+        steps:
+            - run: ./validate.sh
+        steps:
+            - run: echo More changes!
+workflows:
+    version: 2
+    default:
+        jobs: 
+            - build
